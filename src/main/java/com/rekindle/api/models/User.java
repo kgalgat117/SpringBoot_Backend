@@ -1,5 +1,6 @@
-package com.rekindle.api.user;
+package com.rekindle.api.models;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -9,6 +10,13 @@ public class User {
     @Id
     private String id;
     private Long primaryPhone;
+    private Boolean phoneVerified = false;
+    private String primaryEmail;
+    private Boolean emailVerified = false;
+    private Integer onBoardProcessCount = 0;
+    private Boolean userTutorialStatus = false;
+    private String status = "active";
+//    private L
 
     public User() {
     }

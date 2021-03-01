@@ -1,6 +1,6 @@
 package com.rekindle.api.repository;
 
-import com.rekindle.api.user.User;
+import com.rekindle.api.models.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
