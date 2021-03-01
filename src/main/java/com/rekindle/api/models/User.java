@@ -1,6 +1,5 @@
 package com.rekindle.api.models;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -18,11 +17,11 @@ public class User {
     private String status = "active";
     private Location location;
 
-    public User() {
-    }
-
     public User(Long primaryPhone) {
         this.primaryPhone = primaryPhone;
+    }
+
+    public User() {
     }
 
     public User(String id, Long primaryPhone) {
@@ -44,6 +43,62 @@ public class User {
 
     public void setPrimaryPhone(Long primaryPhone) {
         this.primaryPhone = primaryPhone;
+    }
+
+    public Boolean getPhoneVerified() {
+        return phoneVerified;
+    }
+
+    public void setPhoneVerified(Boolean phoneVerified) {
+        this.phoneVerified = phoneVerified;
+    }
+
+    public String getPrimaryEmail() {
+        return primaryEmail;
+    }
+
+    public void setPrimaryEmail(String primaryEmail) {
+        this.primaryEmail = primaryEmail;
+    }
+
+    public Boolean getEmailVerified() {
+        return emailVerified;
+    }
+
+    public void setEmailVerified(Boolean emailVerified) {
+        this.emailVerified = emailVerified;
+    }
+
+    public Integer getOnBoardProcessCount() {
+        return onBoardProcessCount;
+    }
+
+    public void setOnBoardProcessCount(Integer onBoardProcessCount) {
+        this.onBoardProcessCount = onBoardProcessCount;
+    }
+
+    public Boolean getUserTutorialStatus() {
+        return userTutorialStatus;
+    }
+
+    public void setUserTutorialStatus(Boolean userTutorialStatus) {
+        this.userTutorialStatus = userTutorialStatus;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
     }
 
     @Override

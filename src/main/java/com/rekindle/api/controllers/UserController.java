@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping(path = "/api/auth/")
+@RequestMapping(path = "/api/auth")
 public class UserController {
 
     @Autowired
@@ -26,6 +26,6 @@ public class UserController {
         return userService.getUsers();
     }
 
-    @PostMapping(path = "signup")
-    public  User createUser(){ return userRepository.insert(new User(7503162711L));  }
+    @PostMapping(path = "/signup")
+    public  User createUser(){ return userRepository.insert(new User(7503162712L));  }
 }
