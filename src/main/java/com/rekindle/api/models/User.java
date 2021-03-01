@@ -16,7 +16,7 @@ public class User {
     private Integer onBoardProcessCount = 0;
     private Boolean userTutorialStatus = false;
     private String status = "active";
-//    private L
+    private Location location;
 
     public User() {
     }
